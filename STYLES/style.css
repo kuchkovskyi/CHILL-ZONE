@@ -147,6 +147,37 @@ footer { background-color: #f0f0f0; padding: 30px 10px; color: #000000; }
 
 .footer-right a i:hover { color: #000000; }
 
+/*BUTTON TO UP*/
+
+#toTop {
+    border: 1px solid #6C757D;
+    border-radius: 5px !important;
+
+    padding: 10px 15px;
+    color: #6C757D;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+    border-radius: 0px;
+
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    cursor: pointer;
+    display: none;
+
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+}
+
+#toTop:hover {
+    background-color: #6C757D;
+    color: #f0f0f0;
+    transition: all .3s;
+}
+
 /*SELECTION*/
 
 ::selection { color: #ffffff; background-color: #191919; }
@@ -274,4 +305,13 @@ footer { background-color: #f0f0f0; padding: 30px 10px; color: #000000; }
 
 @media only screen and (max-width: 575px) {
     .footer-left { margin-bottom: 10px; }
+}
+
+@media only screen and (max-width: 320px) {
+    .post-title a {
+        font-size: 18px;
+    }
+    .post-title, .card-text {
+        font-size: 18px;
+    }
 }

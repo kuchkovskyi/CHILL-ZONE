@@ -20,8 +20,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display&family=Ubuntu:wght@300&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
-    <!--FONT AWESOME-->
+    <!--FONT AWESOME: ICONS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
 </head>
@@ -76,7 +79,6 @@
     <main>
 
         <!--IMAGE-->
-
         <div class="row">
 
             <div class="col">
@@ -92,7 +94,6 @@
         </div>
 
         <!--POST-->
-
         <div class="row">
 
             <div class="col">
@@ -127,7 +128,6 @@
         </div>
 
         <!--ARGUMENTS-->
-
         <div class="container">
 
             <div class="row">
@@ -138,7 +138,8 @@
                         <i class="fa fa-newspaper-o fa-5x text-center" aria-hidden="true"></i>
                         <div class="card-body">
                             <h4 class="post-title text-center">News every day!</h4>
-                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, fugiat.</p>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, fugiat.
+                            </p>
                         </div>
                     </div>
 
@@ -150,7 +151,8 @@
                         <i class="fa fa-plane fa-5x text-center" aria-hidden="true"></i>
                         <div class="card-body">
                             <h4 class="post-title text-center">Travel in comfort!</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, deleniti.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+                                deleniti.</p>
                         </div>
                     </div>
 
@@ -162,7 +164,8 @@
                         <i class="fa fa-globe fa-5x text-center" aria-hidden="true"></i>
                         <div class="card-body">
                             <h4 class="post-title text-center">Travel with us!</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, recusandae?</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                                recusandae?</p>
                         </div>
                     </div>
 
@@ -172,9 +175,8 @@
 
         </div>
 
-         <!--FORM-->
-
-         <section class="sent">
+        <!--FORM-->
+        <section class="sent">
 
             <div class="container">
 
@@ -202,7 +204,6 @@
         </section>
 
         <!--GRID POSTS-->
-
         <div class="grid-posts">
 
             <div class="container">
@@ -308,7 +309,6 @@
                         </button>
                     </div>
 
-
                 </div>
 
             </div>
@@ -337,7 +337,7 @@
                             <a href="#" class="socials">
                                 <i class="fa fa-facebook-square" aria-hidden="true"></i>
                             </a>
-                            <a href="#" class="socials">
+                            <a href="https://www.instagram.com/_scumbag.ofc_/" class="socials">
                                 <i class="fa fa-instagram" aria-hidden="true"></i>
                             </a>
                             <a href="#" class="socials">
@@ -355,10 +355,31 @@
 
     </footer>
 
+    <div id="toTop">></div>
+
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() != 0) {
+                $('#toTop').fadeIn();
+            } else {
+                $('#toTop').fadeOut();
+            }
+        });
+
+        $('#toTop').click(function () {
+            $('body, html').animate({ scrollTop: 0 }, 800);
+        });
+    });
+
+</script>
 
 </html>
